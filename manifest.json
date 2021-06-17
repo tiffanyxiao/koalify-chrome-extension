@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "koalify-by-tiffany-xiao",
+    "description": "A chrome extension to \"koalify\" your web page by filling it with koalas.",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
